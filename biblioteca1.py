@@ -159,7 +159,6 @@ def consultar_todos_usuarios():
     print("Usuários cadastrados:")
 
     for usuario in usuarios:
-        # Usamos get() para evitar erros se alguma chave estiver faltando
         nome = usuario.get('nome', 'Não consta')
         email = usuario.get('email', 'Não consta')
         documento = usuario.get('documento', 'Não consta')
